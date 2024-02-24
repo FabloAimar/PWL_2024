@@ -93,3 +93,5 @@ Route::get('/Tentang', [AboutController::class, 'about']);
 Route::get('/articles/{id}', [ArticleController::class,'article']);
 
 Route::resource('photos', PhotoController::class);
+
+Route::get('/greeting', [WelcomeController::class, 'greeting']);
